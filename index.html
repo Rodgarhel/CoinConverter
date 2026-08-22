@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moneda</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <main class="mainBox">
+        <h1>Conversor de monedas Nacional</h1>
+        <hr style="width:100%;text-align:left;margin-left:0;color: rgb(165, 170, 175);">
+        <section  class="convBox">
+            <div class="boxCLP">
+                <h2>Pesos CLP</h2>
+                <form id="formCoin">
+                    <input type="text" id="formInput" placeholder="Ingrese el monto en CLP">
+                </form>
+            </div>
+            <div class="boxForeign">
+                <h4>Moneda a convertir:</h4>
+                <select name="moneda" id="foreign"></select>
+                <button class="convertBtn"  type="submit">Buscar</button>
+                <div id="result">
+                    <h3>Resultado:</h3>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+    <script src="./assets/index.js"></script>
+</body>
+</html>
