@@ -1,7 +1,7 @@
 # 💱 Conversor de Monedas Nacional
 
 **GitHub Pages:**  
-https://rodgarhel.github.io/Desafio_04_Arrays/
+https://rodgarhel.github.io/CoinConverter/
 
 Aplicación web de conversión de monedas desarrollada con **HTML, CSS y JavaScript**, utilizando la API pública de [Mindicador](https://mindicador.cl/api/) para obtener valores actualizados de diferentes indicadores económicos de Chile.
 
