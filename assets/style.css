@@ -1,24 +1,71 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .mainBox{
     display: flex;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     flex-direction: column;
     background-color: rgb(26, 26, 26);
     color: whitesmoke;
+    height: 100vh;
+    padding: 2rem;
+    h1{margin-bottom: 1rem;}
 }
 
-.convBox{
+.converterBox{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: start;
     background-color: rgb(110, 124, 128);
     color: whitesmoke;
+    gap: 0.5rem;
 
+    margin-top: 1rem;
     padding: 2rem;
     border-radius: 5px;
+}
+.boxCLP{
+    display: inherit;
+    flex-direction: inherit;
+    gap: 0.5rem;
+    align-content: center;
+    max-width: 80%;
+}
+.boxForeign{
+    display: inherit;
+    flex-direction: inherit;
+    gap: 0.5rem;
+    align-content: center;
+    max-width: 80%;
+}
+.boxGraph{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    background-color: aliceblue;
+    align-items: center;
+}
+#coinChart{
+    width: 600px;
+}
+
+.convertBtn{
+    background-color: rgb(86, 122, 240);
+    color: white;
+    height:2rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+#CLPinput{
+    padding: 0.5rem;
+    text-align: center;
+}
+#coinSelect{
+    padding: 0.5rem;
 }

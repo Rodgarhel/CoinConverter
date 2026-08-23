@@ -10,25 +10,30 @@
     <main class="mainBox">
         <h1>Conversor de monedas Nacional</h1>
         <hr style="width:100%;text-align:left;margin-left:0;color: rgb(165, 170, 175);">
-        <section  class="convBox">
+        <section  class="converterBox">
             <div class="boxCLP">
                 <h2>Pesos CLP</h2>
-                <form id="formCoin">
-                    <input type="text" id="formInput" placeholder="Ingrese el monto en CLP">
-                </form>
+                <input id="CLPinput" placeholder="Ingrese el monto en CLP">
+                
             </div>
             <div class="boxForeign">
                 <h4>Moneda a convertir:</h4>
-                <select name="moneda" id="foreign"></select>
-                <button class="convertBtn"  type="submit">Buscar</button>
+                <select name="moneda" id="coinSelect">
+                    <option value="init" style="background-color: rgb(190, 190, 190);">Selecciona una Moneda</option>
+                </select>
+                <button class="convertBtn" >Buscar</button>
                 <div id="result">
-                    <h3>Resultado:</h3>
+                    <h3>...</h3>
                 </div>
-            </div>
-            
+            </div>                        
+        </section>
+        <h3 id="msj"></h3>
+        <section class="boxGraph">
+            <canvas id="coinChart"></canvas>
         </section>
 
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./assets/index.js"></script>
 </body>
 </html>
